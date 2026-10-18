@@ -192,7 +192,7 @@ Computer Science and Engineering — Artificial Intelligence and Machine Learnin
 
 
 - [GitHub](https://github.com/johnbibinjb)
-- [LinkedIn](www.linkedin.com/in/john-bibin)
+- [LinkedIn](https://www.linkedin.com/in/john-bibin/)
 
 ---
 
