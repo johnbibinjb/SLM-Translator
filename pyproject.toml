@@ -1,0 +1,25 @@
+[project]
+name = "slm-translator"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "johnbibinjb", email = "johnbibin.jb@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "accelerate>=1.15.0",
+    "fastapi>=0.143.3",
+    "sacremoses>=0.2.0",
+    "sentencepiece>=0.2.2",
+    "torch>=2.14.1",
+    "transformers>=5.20.1",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[project.scripts]
+slm-translator = "slm_translator:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"

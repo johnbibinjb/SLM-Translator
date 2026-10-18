@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SLM Translator | English to Tamil</title>
+
+    <meta
+        name="description"
+        content="Translate English text into Tamil using an AI-powered translation model."
+    >
+
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/scripts.js" defer></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="/" class="logo">
+            <span class="logo-icon">T</span>
+            <span>SLM Translator</span>
+        </a>
+
+        <span class="language-badge">
+            <span class="status-dot"></span>
+            AI Translator
+        </span>
+    </header>
+
+    <main class="main-container">
+
+        <section class="hero">
+            <div class="eyebrow">
+                ENGLISH <span>→</span> TAMIL
+            </div>
+
+            <h1>Words connect <span>worlds.</span></h1>
+
+            <p>
+                Translate your English text into Tamil with your
+                AI-powered SLM Translator.
+            </p>
+        </section>
+
+        <section class="translator-card">
+
+            <div class="language-header">
+                <div class="language-name">
+                    <span class="language-icon">EN</span>
+                    <div>
+                        <h2>English</h2>
+                        <p>Source language</p>
+                    </div>
+                </div>
+
+                <div class="direction-arrow">→</div>
+
+                <div class="language-name tamil-language">
+                    <span class="language-icon tamil-icon">த</span>
+                    <div>
+                        <h2>Tamil</h2>
+                        <p>Target language</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="translation-area">
+
+                <div class="text-panel">
+                    <label for="inputText">Enter your text</label>
+
+                    <textarea
+                        id="inputText"
+                        placeholder="Type something in English...&#10;&#10;Example: Welcome to our college."
+                        maxlength="5000"
+                        spellcheck="true"
+                    ></textarea>
+
+                    <div class="text-footer">
+                        <span id="inputCount">0 / 5000 characters</span>
+                        <button
+                            type="button"
+                            class="text-action"
+                            onclick="clearText()"
+                        >
+                            Clear
+                        </button>
+                    </div>
+                </div>
+
+                <div class="text-panel output-panel">
+                    <label for="outputText">Tamil translation</label>
+
+                    <textarea
+                        id="outputText"
+                        placeholder="தமிழ் மொழிபெயர்ப்பு இங்கே தோன்றும்..."
+                        readonly
+                        lang="ta"
+                    ></textarea>
+
+                    <div class="text-footer">
+                        <span>Translation result</span>
+                        <button
+                            type="button"
+                            class="text-action"
+                            onclick="copyTranslation()"
+                        >
+                            Copy text
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="translate-section">
+                <p id="status" role="status" aria-live="polite">
+                    Ready to translate.
+                </p>
+
+                <button
+                    type="button"
+                    id="translateBtn"
+                    class="translate-button"
+                    onclick="translateText()"
+                >
+                    <span>Translate to Tamil</span>
+                    <span class="button-arrow">→</span>
+                </button>
+
+                <p class="shortcut-hint">
+                    Tip: Press Ctrl + Enter to translate
+                </p>
+            </div>
+
+        </section>
+
+        <section class="feature-grid">
+            <article class="feature">
+                <div class="feature-icon">✦</div>
+                <h3>AI Powered</h3>
+                <p>Uses your pretrained translation model.</p>
+            </article>
+
+            <article class="feature">
+                <div class="feature-icon">↔</div>
+                <h3>Simple Interface</h3>
+                <p>Enter text and get the translation in one click.</p>
+            </article>
+
+            <article class="feature">
+                <div class="feature-icon">தமிழ்</div>
+                <h3>Tamil Output</h3>
+                <p>View and copy the translated Tamil text.</p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>SLM Translator · Built with FastAPI and Transformers</p>
+    </footer>
+
+</body>
+</html>
