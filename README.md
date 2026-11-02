@@ -2,7 +2,7 @@
 
 An AI-powered translation application that translates English text into Tamil using a pretrained neural machine translation model, Python, and FastAPI.
 
-🔗 **Source Code:** [GitHub Repository](https://github.com/johnbibinjb/SLM-Translator) · 🚀 
+🔗 **Live:** [SLM Translator](https://zmcmzvpt-8000.inc1.devtunnels.ms/) · 🚀 
 
 ## 📌 Overview
 
